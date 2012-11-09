@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="styles.css" />
 		
-		<title>Contact</title>
+		<title>Contacts</title>
 	</head>
 	<body>
 		<div class="container">
