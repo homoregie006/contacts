@@ -19,8 +19,8 @@
 	</div>
 	<div class="form actions">
 		<div class="form-actions">
- 		<button type="submit" class="btn btn-success">Save changes</button>
- 		<button type="button" class="btn" onclick="window.history.go(-1)">Cancel</button>
+ 		<button type="submit" class="btn btn-success" ><i class="icon-plus icon-white "></i>Add</button>
+ 		<button type="button" class="btn" onclick="window.history.go(-1)"> <i class="icon-remove"></i>Cancel</button>
 		</div>
 	</div>
 			
