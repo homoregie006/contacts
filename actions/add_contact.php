@@ -1,21 +1,19 @@
 <?php 
-// Extract all POST data to their own variables
+// Put all post data into their own variable
 extract($_POST);
 
-// Check to see that a candidate was chosen and that a valid phone number was entered
-if(isset($vote) && isset($ssn) && is_valid_ssn($ssn) && !has_voted($ssn)) {
-	// Open file
-	$file = fopen('../data/votes.txt', 'a+');
+// Open data file for appending
+$file = fopen('../data/contacts.txt','a+');
 
-	// Write SSN & vote
-	fwrite($file, "$ssn,$vote\n");
+// Create a timestamp
+$timestamp = time();
 
-	// Close file
-	fclose($file);
+// Append entered information to the file
+fwrite($file, "$firstname,$lastname,$email,$phone,$timestamp");
 
-	// header('Location:../');
-} else {
-	header('Location:../?p=form_vote');
-}
+// Close the data file
+fclose($file);
 
-?>
+// Redirect to the list of contacts
+header('Location:../?p=contacts');
+
