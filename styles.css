@@ -15,8 +15,16 @@ nav img {
 	border: 1px solid #999;
 	border-radius:6px;
 	padding: 8px;
+	
+	color: #777777;;
 }
 
+
+
 .contact img {
+	float:right;
+}
+
+p.delete {
 	float:right;
 }
